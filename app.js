@@ -8,10 +8,10 @@ async function getData(){
 	state_data = [];
 	console.log(data);
 
-	document.querySelector('.total_cases').textContent = data.data.summary.total;
-	document.querySelector('.total_deaths').textContent = data.data.summary.deaths;
-	document.querySelector('.discharged').textContent = data.data.summary.discharged;
-	document.querySelector('.refreshed').textContent = data.lastRefreshed;	
+// 	document.querySelector('.total_cases').textContent = data.data.summary.total;
+// 	document.querySelector('.total_deaths').textContent = data.data.summary.deaths;
+// 	document.querySelector('.discharged').textContent = data.data.summary.discharged;
+// 	document.querySelector('.refreshed').textContent = data.lastRefreshed;	
 
 	Object.keys(data.data.regional).forEach(key=>{
 		state_data.push(data.data.regional[key]);
